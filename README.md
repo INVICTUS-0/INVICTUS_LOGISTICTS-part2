@@ -147,6 +147,14 @@ The site was tested manually across the following:
 - **HTML/CSS validation** — all pages run through the [W3C Markup Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - **Keyboard accessibility** — tab order and `:focus-visible` states checked on interactive elements
 
+
+## Screenshots
+
+![device 1](Screenshot%202026-09-18%20225848.png)
+![device 2](Screenshot%202026-09-18%20225917.png)
+![device 3](Screenshot%202026-09-18%20225938.png)
+
+
 ## References
 
 - HOSTAFRICA (2026) How much is it to host a website? [online] Available
