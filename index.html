@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link the external stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>INVICTUS Logistics | Home</title>
+
+    
+</head>
+<body>
+    <header class="home-header">
+
+        <a href="index.html">
+          <img src="images/logo.png" alt="INVICTUS Logistics logo">
+            INVICTUS Logistics  
+        </a>
+        <!--Main navigation menu>-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="quote.html">Get a Quote</a></li>
+                <li><a href="track.html">Track Shipment</a></li>
+
+            </ul>
+        </nav>
+
+        <!--This link jumps straight to that section using its id= "account" anchor-->
+        <a href="#account" class="nav-cta">Login / Register</a>
+
+
+    </header>
+
+    <!--Main content -->
+    <main >
+        <section class="hero">
+            <img src="images/hero.png" alt="INVICTUS Logistics truck on route with cargo loaded" class="hero-bg">
+
+            <div class="hero-content">
+
+                <h1>Where bulk and industrial cargo meet precision.</h1>
+            
+
+                <p>INVICTUS Logistics coordinates hauling from ports, airports and 
+                   mines, with clear pricing and honest communication &mdash; built
+                   for small and big businesses, not just corporate contracts.
+                </p>
+
+                <!--Two main calls to action-->
+                <a href="quote.html" class="btn btn-primary">Get a Quote</a>
+                <a href="track.html" class="btn btn-secondary">Track Shipment</a>
+            </div>
+
+        </section>
+
+        <section class="service-cards">
+            <h2>What we haul</h2>
+
+            <!--Each <article> below represents one independent services card -->
+            <article>
+                <h3>Port &amp; Bay Hauling</h3>
+                <p>Container and bulk cargo collection straight from the bay.</p>
+                <a href="services.html#bay">Learn More</a>
+            </article>
+
+            <article>
+                <h3>Airport Hauling</h3>
+                <p>Time-sensitive air freight collected with priority handling.</p>
+                <a href="services.html#airports">Learn More</a>
+            </article>
+
+            <article>
+                <h3>Mine Hauling</h3>
+                <p>Bulk materials and equipment transport from mine sites.</p>
+                <a href="services.html#mines">Learn More</a>
+            </article>
+
+        </section>
+
+        <section class="how-it-works">
+            <h2>How it works</h2>
+            <ol class="steps">
+                <li>Request a quote &mdash; tell us what needs to move and where from.</li>
+                <li>We confirm prcing &mdash; a clear quote lands in your inbox.</li>
+                <li>Track your cargo &mdash; follow it from pickup to delivery online.</li>
+            </ol>
+        </section>
+
+        <!--Account section-->
+        <section id="account">
+            <h2>Your account</h2>
+
+            <div class="auth-card" id="login">
+                <div class="auth-icon" aria-hidden="true">&#128274;</div>
+
+                <h3>Welcome</h3>
+                <p class="auth-subtitle">Login to continue your journey</p>
+ 
+                <form action="#" method="post">
+ 
+                    <!--'for' on the label must match the 'id' on its inputs, this links them together for accessibility-->
+                    <label for="loginEmail" class="sr-only">Email address</label>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address" required>
+ 
+                    <label for="loginPassword" class="sr-only">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required minlength="8">
+ 
+                    <div class="auth-row">
+                        <label class="auth-checkbox">
+                            <input type="checkbox" name="rememberMe">
+                            Remember me
+                        </label>
+                        <a href="#" class="auth-link">Forgot Password?</a>
+                    </div>
+ 
+                    <!--type="submit" sends the form when clicked-->
+                    <button type="submit" class="btn-auth">Login</button>
+                </form>
+ 
+                <p class="auth-footer">Don&rsquo;t have an account? <a href="#register">Create one</a></p>
+            </div>
+
+            
+
+            <!-- Register Form -->
+            <!--New customer use this to create an account -->
+            <div class="auth-card" id="register">
+                <div class="auth-icon" aria-hidden="true">&#10024;</div>
+                <h3>Create Account</h3>
+                <p class="auth-subtitle">Start your journey with us</p>
+ 
+                <form action="#" method="post">
+ 
+                    <label for="registerName" class="sr-only">Full Name</label>
+                    <input type="text" id="registerName" name="registerName" placeholder="Full Name" required>
+ 
+                    <label for="registerEmail" class="sr-only">Email address</label>
+                    <input type="email" id="registerEmail" name="registerEmail" placeholder="Email Address" required>
+ 
+                    <label for="regPhone" class="sr-only">Phone Number</label>
+                    <input type="tel" id="regPhone" name="Phone" placeholder="Phone Number" required>
+ 
+                    <label for="registerPassword" class="sr-only">Password</label>
+                    <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required minlength="8">
+ 
+                    <button type="submit" class="btn-auth">Create Account</button>
+                </form>
+ 
+                <p class="auth-footer">Already have an account? <a href="#login">Log in</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer
+    Holds contacts details and copyright line.-->
+
+    <footer>
+        <p>&copy; 2026 INVICTUS Logistics. All rights reserved.</p>
+
+        <!--<address> is the correct semantic tag for contact information -->
+        <address>
+            Pretoria, Gauteng<br>
+            <p>Contact us:</p>
+            <a href="mailto:info@invictuslogistics.co.za">info@invictuslogistics.co.za</a><br>
+            <a href="tel:+27721385814">+27 72 138 5814</a>
+        </address>
+        </footer>
+    
+</body>
+</html>
